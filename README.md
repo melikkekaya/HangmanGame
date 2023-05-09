@@ -37,7 +37,7 @@ This file contains the hangman game class.
 
 ## Visuals
 
-[Hangman (Image)] (https://github.com/melikkekaya/hangman/blob/main/utils/test.png?raw=true)
+![Hangman (Image)](https://github.com/melikkekaya/hangman/blob/main/utils/test.png?raw=true)
 
 
 ## Contributors
