@@ -58,7 +58,8 @@ class Hangman():
                 break
 
     def game_over(self):
-        print("You're out of lives! Game is over..")
+        self.word = "".join(self.word_to_find).upper()
+        print(f"You're out of lives! Game is over.. The word was {self.word}")
 
     def well_played(self):
         self.word = "".join(self.word_to_find).upper()
