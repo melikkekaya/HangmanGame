@@ -7,17 +7,17 @@ This is a basic implementation of the classic game of Hangman in Python. It prov
 ![Hangman (Image)](https://github.com/melikkekaya/hangman/blob/main/utils/image.png?raw=true)
 ## Installation
 
-- Run the script `main.py` in your terminal using the command: `python main.py`
+- Run the script `main.py` in your terminal using the command: `python3 main.py`
 ### Files
 
-- main.py
+- **main.py** :
 This is the main file that runs the game.
 
-- game.py
+- **game.py** :
 This file contains the hangman game class.
 ## How to Play
 
-- Run the script `main.py` in your terminal using the command: `python main.py`
+- Run the script `main.py` in your terminal using the command: `python3 main.py`
 - The game will randomly select a word from the list of words
 - The player will be presented with a series of underscores representing the letters in the word.
 - The player must guess a letter by typing it in the terminal.
@@ -26,11 +26,14 @@ This file contains the hangman game class.
 - The game ends when the player guesses the word correctly or the lives are completely lost.
 
 ### Example outputs
-
-![Hangman (Image)](https://github.com/melikkekaya/hangman/blob/main/utils/1.jpg?raw=true)
-![Hangman (Image)](https://github.com/melikkekaya/hangman/blob/main/utils/2.jpg?raw=true)
-![Hangman (Image)](https://github.com/melikkekaya/hangman/blob/main/utils/3.jpg?raw=true)
-![Hangman (Image)](https://github.com/melikkekaya/hangman/blob/main/utils/4.jpg?raw=true)
+- if the letter is already found
+![Hangman (Image)](https://github.com/melikkekaya/hangman/blob/main/utils/1.png?raw=true)
+- if the letter is already wrongly guessed
+![Hangman (Image)](https://github.com/melikkekaya/hangman/blob/main/utils/2.png?raw=true)
+- if the lives are over
+![Hangman (Image)](https://github.com/melikkekaya/hangman/blob/main/utils/3.png?raw=true)
+- if the word is correctly found
+![Hangman (Image)](https://github.com/melikkekaya/hangman/blob/main/utils/4.png?raw=true)
 
 ### Timeline
 

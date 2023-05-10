@@ -79,6 +79,15 @@ class Hangman():
         """
         word = "".join(self.word_to_find).upper()
         print(f"You found the word: {word} in {self.turn_count} turns with {self.error_count} errors!")
-        
-hangman = Hangman()
-hangman.start_game()
+
+hangman = Hangman()    
+
+while True:
+    print("\nWelcome to the Hangman Game!!")
+    hangman.start_game()
+    response = input("Do you want to play again? Y/N : ")
+    if response == "Y" or "y":
+        continue
+    else:
+        print("Exiting..")
+        break
