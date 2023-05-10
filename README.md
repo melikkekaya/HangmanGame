@@ -1,8 +1,10 @@
 # Basic Hangman Game on Python
 
+![Hangman (Image)](https://github.com/melikkekaya/hangman/blob/main/utils/image2.jpg?raw=true)
+
 This is a basic implementation of the classic game of Hangman in Python. It provided a better understanding on **Object Oriented Programming(OOP)** for the creater.
 
-![Hangman (Image)](https://github.com/melikkekaya/hangman/blob/main/utils/image2.jpg?raw=true)
+![Hangman (Image)](https://github.com/melikkekaya/hangman/blob/main/utils/image.png?raw=true)
 ## Installation
 
 - Run the script `main.py` in your terminal using the command: `python main.py`
@@ -23,7 +25,10 @@ This file contains the hangman game class.
 - If the letter is not in the word, total lives will be deducted one and it will add to error count.
 - The game ends when the player guesses the word correctly or the lives are completely lost.
 
-![Hangman (Image)](https://github.com/melikkekaya/hangman/blob/main/utils/image.png?raw=true)
+![Hangman (Image)](https://github.com/melikkekaya/hangman/blob/main/utils/1.jpg?raw=true)
+![Hangman (Image)](https://github.com/melikkekaya/hangman/blob/main/utils/2.jpg?raw=true)
+![Hangman (Image)](https://github.com/melikkekaya/hangman/blob/main/utils/3.jpg?raw=true)
+![Hangman (Image)](https://github.com/melikkekaya/hangman/blob/main/utils/4.jpg?raw=true)
 
 ### Timeline
 
