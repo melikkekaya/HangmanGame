@@ -25,6 +25,8 @@ This file contains the hangman game class.
 - If the letter is not in the word, total lives will be deducted one and it will add to error count.
 - The game ends when the player guesses the word correctly or the lives are completely lost.
 
+### Example outputs
+
 ![Hangman (Image)](https://github.com/melikkekaya/hangman/blob/main/utils/1.jpg?raw=true)
 ![Hangman (Image)](https://github.com/melikkekaya/hangman/blob/main/utils/2.jpg?raw=true)
 ![Hangman (Image)](https://github.com/melikkekaya/hangman/blob/main/utils/3.jpg?raw=true)
