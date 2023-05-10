@@ -2,7 +2,7 @@
 
 This is a basic implementation of the classic game of Hangman in Python. It provided a better understanding on **Object Oriented Programming(OOP)** for the creater.
 
-![Hangman (Image)](https://github.com/melikkekaya/hangman/blob/main/utils/image2.png?raw=true)
+![Hangman (Image)](https://github.com/melikkekaya/hangman/blob/main/utils/image2.jpg?raw=true)
 ## Installation
 
 - Run the script `main.py` in your terminal using the command: `python main.py`
