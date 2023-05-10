@@ -22,18 +22,24 @@ class Hangman():
             if self.letter in self.word_to_find:                
                 if self.letter in self.correctly_guessed_letters:
                     print("You've already found this letter..")
-                else:                                         # to find indexes of the letter in word_to_find and change all _ with the letter
-                    matched_indexes = []
-                    i = 0
-                    length = len(self.word_to_find)
-                    while i < length:
-                        if self.letter == self.word_to_find[i]:
-                            matched_indexes.append(i)
-                        i += 1
-                    for i in matched_indexes:
-                        self.correctly_guessed_letters[i]=self.letter
+                else:
+                    for index, letter in enumerate(self.word_to_find): # to find indexes of the letter in word_to_find and change all _ with the letter
+                        if letter == self.letter:
+                            self.correctly_guessed_letters[index] = self.letter
                     self.turn_count += 1
                     print((" ".join(e for e in self.correctly_guessed_letters)).upper())
+
+                    # matched_indexes = []
+                    # i = 0
+                    # length = len(self.word_to_find)
+                    # while i < length:
+                    #     if self.letter == self.word_to_find[i]:
+                    #         matched_indexes.append(i)
+                    #     i += 1
+                    # for i in matched_indexes:
+                    #     self.correctly_guessed_letters[i]=self.letter
+                    # self.turn_count += 1
+                    # print((" ".join(e for e in self.correctly_guessed_letters)).upper())
 
             else:
                 if self.letter not in self.wrongly_guessed_letters:
