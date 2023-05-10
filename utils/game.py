@@ -3,9 +3,9 @@ import random
 class Hangman():
     def __init__(self) :   
         self.possible_words = ['becode', 'learning', 'mathematics', 'sessions']
-        self.word_to_find = [letter for letter in random.choice(self.possible_words)]
+        self.word_to_find = list(random.choice(self.possible_words))
 
-        self.correctly_guessed_letters = ["_" for letter in self.word_to_find]  # add '_' for each letter of the word_to_find into a list
+        self.correctly_guessed_letters = ["_"] * len(self.word_to_find)  # add '_' for each letter of the word_to_find into a list
         self.wrongly_guessed_letters = []
 
         self.lives = 5
@@ -57,12 +57,12 @@ class Hangman():
         - 'well_played()' if the word is found before lives are out.
         - 'game_over()' if 5 lives are out.
         """
-        while self.lives > 0:
+        while True:
             self.play()
             if '_' not in self.correctly_guessed_letters:
                 self.well_played()
                 break
-            if self.lives ==0:
+            if self.lives == 0 :
                 self.game_over()
                 break
 
@@ -79,15 +79,18 @@ class Hangman():
         """
         word = "".join(self.word_to_find).upper()
         print(f"You found the word: {word} in {self.turn_count} turns with {self.error_count} errors!")
+    
+    def new_game():
+        while True:
+            hangman = Hangman() 
+            print("\nWelcome to the Hangman Game!!")
+            hangman.start_game()
+            response = input("Do you want to play again? Y/N : ")
+            if response.upper() != "Y":
+                print("Exiting..")
+                break
 
-hangman = Hangman()    
 
-while True:
-    print("\nWelcome to the Hangman Game!!")
-    hangman.start_game()
-    response = input("Do you want to play again? Y/N : ")
-    if response == "Y" or "y":
-        continue
-    else:
-        print("Exiting..")
-        break
+
+if __name__ == "__main__":
+    Hangman.new_game()
