@@ -1,9 +1,10 @@
 import random
 
 class Hangman():
+    possible_words = ['becode', 'learning', 'mathematics', 'sessions']
+
     def __init__(self) :   
-        self.possible_words = ['becode', 'learning', 'mathematics', 'sessions']
-        self.word_to_find = list(random.choice(self.possible_words))
+        self.word_to_find = list(random.choice(Hangman.possible_words))
 
         self.correctly_guessed_letters = ["_"] * len(self.word_to_find)  # add '_' for each letter of the word_to_find into a list
         self.wrongly_guessed_letters = []
@@ -28,18 +29,6 @@ class Hangman():
                             self.correctly_guessed_letters[index] = self.letter
                     self.turn_count += 1
                     print((" ".join(e for e in self.correctly_guessed_letters)).upper())
-
-                    # matched_indexes = []
-                    # i = 0
-                    # length = len(self.word_to_find)
-                    # while i < length:
-                    #     if self.letter == self.word_to_find[i]:
-                    #         matched_indexes.append(i)
-                    #     i += 1
-                    # for i in matched_indexes:
-                    #     self.correctly_guessed_letters[i]=self.letter
-                    # self.turn_count += 1
-                    # print((" ".join(e for e in self.correctly_guessed_letters)).upper())
 
             else:
                 if self.letter not in self.wrongly_guessed_letters:
